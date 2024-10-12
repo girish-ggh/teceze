@@ -1,0 +1,388 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        flex-grow: 0;
+        justify-content: flex-end;
+    }
+    .site-footer__top .region {
+      width: auto;
+    }
+    .site-footer .block{
+        margin-top: 0;
+        border: 0;
+        padding: 0;
+    }
+}
+.site-footer h2{
+    border-bottom: 0;
+    color: #b9fd50;
+    font-size: 20px;
+    font-weight: bold;
+}
+.site-footer .site-footer__top nav{
+    padding-left: 50px;
+}
+.site-footer .site-footer__top nav a{
+    padding-left: 0;
+}
+.site-footer .site-footer__top ul {
+    display: block;
+}
+
+.hero-link a,
+.menu--main-navigation-2 ul li a {
+    background: #b9fd50;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: #000 !important;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.block-superfish ul li a {
+    color: #fff;
+
+
+}
+
+.block-superfish ul li a {
+    padding: 25px;
+}
+
+.menu--main-navigation-2 {
+    width: 185px;
+}
+
+.visually-hidden-focusable {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
+
+.hero-section {
+    color: #fff;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-title {
+    font-size: 70px;
+    padding: 6% 10%;
+    text-align: center;
+    line-height: 85px;
+}
+
+.hero-body {
+    padding: 0% 35% 5%;
+}
+
+.hero-sub-text {
+    position: relative;
+    max-width: 356px;
+    margin: 100px auto 25px;
+    text-align: center;
+}
+.hero-sub-text:before {
+    content: " ";
+    height: 2px;
+    width: 55px;
+    background: #b9fd50;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.hero-sub-text:after {
+    content: " ";
+    height: 2px;
+    width: 55px;
+    background: #b9fd50;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.hero-bottom-icon-section{
+    padding: 14px;
+    border-radius: 12px;
+    width: 73%;
+    margin: auto;
+}
+.hero-bottom-icon-section .paragraph-item{
+    display: flex;
+    margin-left:30px;
+}
+.hero-bottom-icon-section .paragraph-field{
+    display: flex;
+    justify-content: center;
+}
+.graphic-icon-image img{
+    width: 25px;
+    height: 25px;
+    margin-top: 7px;
+}
+.graphic-icon-text{
+    color: #ccc;
+    padding-left: 10px ;
+    font-size: 25px;
+}
+.block-views-blockservices-block-1  h2{
+ color:#fff;
+ font-size: 20px;
+ text-align: center;
+ margin-top: 100px;
+}
+.block-views-blockservices-block-1 .view-header{
+    color: #fff;
+    text-align: center;
+}
+.block-views-blockservices-block-1  .view-content{
+    display: flex;
+}
+#block-teceze-bootstrap-mainnavigation ul{
+    list-style: none;
+    display: inline;
+}
+#block-teceze-bootstrap-mainnavigation ul li{
+    float: left;
+    padding-right: 10px;
+
+}
+#block-teceze-bootstrap-copyright{
+    text-align: right;
+}
+#block-teceze-bootstrap-ourlocation ul{
+    display: block;
+}
+.view-services img{
+    width: 50px;
+    height: 50px;
+}
+
+.services-large {
+    background-color: #b9fd50;
+    width: 250px;
+    height: 250px;
+    border-radius: 14px;
+    text-align: center;
+}
+.services-large a {
+    color: black;
+}
+.services-large img {
+    width: 100px;
+    height: 100px;
+    margin-top: 24%;
+}
+.services-title {
+    margin-top: 5%;
+    font-weight: bold;
+}
+#block-teceze-bootstrap-views-block-services-block-1 h2 {
+    padding-bottom: 1%;
+}
+.view-id-services .view-header {
+    padding-bottom: 6%;
+}
+#block-teceze-bootstrap-views-block-articles-alternate-listing-block-1 {
+    color: #fff;
+}
+#block-teceze-bootstrap-views-block-articles-alternate-listing-block-1 h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 100px;
+    padding-bottom: 26px;
+}
+.content-left-section .content-image img, .content-right-section .content-image img {
+    width: 68%;
+    height: 68%;
+    border-radius: 30px;
+}
+
+.content-right-section .content-image img {
+    margin-left: 140px;;
+}
+.content-left-section, .content-right-section {
+    display: inline-block;
+}
+.content-right-section .content-title, .content-left-section .content-title {
+    font-size: 44px;
+    padding-bottom: 5%
+}.content-right-section .content-body {
+    padding-bottom: 10%
+}
+.content-right-section .content-read-more a, .content-left-section .content-read-more a {
+    background: #b9fd50;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: #000 !important;
+    text-decoration: none;
+    display: inline-block;
+}
+.articles-listing-large .views-row {
+    margin-bottom: 78px;;
+}
+
+.featured-bottom-second {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#block-teceze-bootstrap-testimonial h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#block-teceze-bootstrap-testimonial .field--type-text-with-summary p:first-child {
+    font-size: 40px;
+    font-weight: bold;
+}
+#block-teceze-bootstrap-testimonial .field--type-text-with-summary p:last-child {
+    font-weight: bold;
+}
+
+/* Hide the Pause/Resume button */
+#views_slideshow_controls_text_pause_testimonial_slider-block_1 {
+	display: none;
+}
+
+/* Position Previous and Next buttons on either side of the slideshow */
+.views-slideshow-controls-top {
+	position: relative;
+}
+
+/* Style for the Previous button */
+#views_slideshow_controls_text_previous_testimonial_slider-block_1 {
+	position: absolute;
+	left: 0;
+	/* Align to the left */
+	top: 50%;
+	transform: translateY(420%);
+	z-index: 10;
+	background-color: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+
+/* Style for the Next button */
+#views_slideshow_controls_text_next_testimonial_slider-block_1 {
+	position: absolute;
+	right: 0;
+	/* Align to the right */
+	top: 50%;
+	transform: translateY(420%);
+	z-index: 10;
+	background-color: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+
+/* Make sure the slideshow stays centered between the buttons */
+#views_slideshow_cycle_main_testimonial_slider-block_1 {
+	/* Center the slideshow */
+	padding-left: 50px;
+	/* Adjust for the Previous button space */
+	padding-right: 50px;
+	/* Adjust for the Next button space */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 46px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 15px; /* Optional padding for inner spacing */
+    background-color: #fff; /* Background color to make it stand out */
+
+    /* Make the box smaller */
+    max-width: 900px; /* Adjust the width to make the box smaller */
+    margin: 0 auto; /* Center the box horizontally */
+}
+
+.slider-main-content-section .slider-left-section {
+    text-align: left;;
+}
+.slider-main-content-section .slider-company-logo-name {
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left:26px;
+}
+.slider-main-content-section .slider-company-logo {
+    padding-bottom: 32px;
+}
+.slider-main-content-section .slider-testi-title{
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#views_slideshow_cycle_teaser_section_testimonial_slider-block_1 {
+    height:548px !important;
+}
+.slider-main-content-section .slider-testi-author {
+    font-weight: bold;
+}
+#views_slideshow_cycle_teaser_section_testimonial_slider-block_1 .views_slideshow_cycle_slide {
+    padding: 70px;
+}
+#block-teceze-bootstrap-views-block-testimonial-slider-block-1 {
+    padding-bottom: 100px;
+}
+/* Hide the text and replace it with an icon using Font Awesome */
+.views-slideshow-controls-text-previous-processed a, .views-slideshow-controls-text-next-processed a {
+    position: relative;
+    display: inline-block;
+    text-indent: -9999px; /* Hides the text */
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px; /* Vertically center the icon */
+    color: white;
+    text-decoration: none;
+}
+
+/* Use the ::before pseudo-element to add a Font Awesome icon */
+.views-slideshow-controls-text-previous-processed a::before, .views-slideshow-controls-text-next-processed a::before {
+    content: "\f053"; /* Font Awesome Unicode for left chevron */
+    font-family: "Font Awesome 5 Free"; /* Make sure Font Awesome is loaded */
+    font-weight: 900; /* Font Awesome solid weight */
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+}
+
+/* Optional: Add hover effect */
+.views-slideshow-controls-text-previous-processed a:hover, .views-slideshow-controls-text-next-processed a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+@media (max-width: 767px) {
+    #block-teceze-bootstrap-views-block-services-block-1, #block-teceze-bootstrap-views-block-articles-alternate-listing-block-1 .articles-listing-large {
+      display: none !important;
+    }
+  }
+  
+  /* For larger screens (tablets, desktops), the block will be displayed */
+  @media (min-width: 768px) {
+    #block-teceze-bootstrap-views-block-services-block-2,  #block-teceze-bootstrap-views-block-articles-alternate-listing-block-1 .articles-listing-small {
+      display: none !important;
+    }
+  }

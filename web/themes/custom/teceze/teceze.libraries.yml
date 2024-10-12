@@ -1,0 +1,9 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/components/site-header.css: {}
+      css/components/header-site-branding.css: {}
+      css/components/header-navigation.css: {}
+      css/components/nav-primary.css: {}
+      css/components/nav-secondary.css: {}
