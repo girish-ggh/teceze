@@ -20,12 +20,12 @@
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-<div class="container">
-  <div class="row">
+<div class="container d-flex flex-wrap justify-content-center">
+  <div class="row d-flex flex-wrap justify-content-center">
     {% for row in rows %}
       {%
         set row_classes = [
-          default_row_class ? 'views-row', 'col-md-3',
+          default_row_class ? 'views-row', 'col-md-3', 'd-flex', 'flex-wrap', 'justify-content-center',
         ]
       %}
       <div{{ row.attributes.addClass(row_classes) }}>

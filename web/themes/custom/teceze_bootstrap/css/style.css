@@ -124,14 +124,6 @@ a {
     width: 73%;
     margin: auto;
 }
-.hero-bottom-icon-section .paragraph-item{
-    display: flex;
-    margin-left:30px;
-}
-.hero-bottom-icon-section .paragraph-field{
-    display: flex;
-    justify-content: center;
-}
 .graphic-icon-image img{
     width: 25px;
     height: 25px;
@@ -212,9 +204,13 @@ a {
 .content-left-section .content-image img, .content-right-section .content-image img {
     width: 68%;
     height: 68%;
-    border-radius: 30px;
 }
-
+.articles-listing-large .views-row:nth-child(odd) .content-image img {
+    border-radius: 30px 30px 30px 0px;
+}
+.articles-listing-large .views-row:nth-child(even) .content-image img {
+    border-radius: 30px 30px 0px 30px;
+}
 .content-right-section .content-image img {
     margin-left: 140px;;
 }
@@ -224,7 +220,8 @@ a {
 .content-right-section .content-title, .content-left-section .content-title {
     font-size: 44px;
     padding-bottom: 5%
-}.content-right-section .content-body {
+}
+.content-right-section .content-body, .content-left-section .content-body {
     padding-bottom: 10%
 }
 .content-right-section .content-read-more a, .content-left-section .content-read-more a {
@@ -371,12 +368,169 @@ a {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
+#block-teceze-bootstrap-views-block-services-block-1 .container .views-row {
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    flex: 1 30%; /* Makes sure each div takes up 30% of width */
+    max-width: 30%; /* Ensures divs don't expand beyond this width */
+}
+#block-teceze-bootstrap-views-block-services-block-1 .container .row {
+    max-width: 80%; /* Adjust to control total width */
+}
+#block-teceze-bootstrap-mainnavigation2 .nav-item, .hero-section .hero-link, .articles-listing-large  .content-read-more{
+    font-weight: bold;
+}
+.articles-listing-small .views-field-field-image img {
+    width: 100%;
+    height: 100%;
+}
+.social-content {
+    display: flex;
+    gap: 30px; /* Adds space between each div */
+    align-items: center; /* Aligns items vertically */
+} 
+.social-field {
+    display: inline-flex;
+}
+.site-footer .content .social-value-facebook {
+    color: #b9fd50;
+}
 
 
 @media (max-width: 767px) {
-    #block-teceze-bootstrap-views-block-services-block-1, #block-teceze-bootstrap-views-block-articles-alternate-listing-block-1 .articles-listing-large {
+    #block-teceze-bootstrap-views-block-services-block-1, #block-teceze-bootstrap-views-block-articles-alternate-listing-block-1 .articles-listing-large, .featured-bottom-second {
       display: none !important;
+    }
+    .hero-body {
+        padding: 0% 7% 5%;
+    }
+    .hero-title {
+        font-size: 42px; 
+    }
+    .paragraph-field {
+        column-count: 2;
+        column-gap: 20px; /* Space between columns */
+    }
+    .paragraph-item {
+        break-inside: avoid; /* Prevents the item from being split between columns */
+        margin-bottom: 20px; /* Adds spacing between items */
+    }
+    
+    .graphic-icon-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .graphic-icon-text {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .graphic-icon-text {
+        font-size: 18px;
+    }
+    .paragraph-item {
+        display: flex;
+        align-items: center; /* Vertically center the content */
+        gap: 10px; /* Space between the image and text */
+    }
+    .graphic-icon-image img {
+        width: 30px; /* Set a fixed width for the image */
+        height: auto; /* Maintain the aspect ratio */
+    }
+    .hero-bottom-icon-section{
+        width: 100%;
+    }
+    #block-teceze-bootstrap-views-block-services-block-2 {
+        text-align: center;
+        color:#fff;
+        padding: 34px;
+    }
+    #block-teceze-bootstrap-views-block-services-block-2 .view-id-services .view-content  {
+        text-align: left;
+    }
+    .layout-main-wrapper {
+        padding-bottom: 60px;
+    }
+    .services-title {
+        font-size: 22px;
+    }
+    .services-mobile-title-section {
+        display: flex;
+        align-items: center; /* Vertically center the content */
+        gap: 10px; /* Space between the icon and title */
+    }
+    .services-title {
+        margin-top: 0%;
+    }
+    .view-display-id-block_2 .views-row  {
+        padding-bottom: 28px;
+    }  
+    .services-mobile-title-section, .services-body {
+        padding-bottom: 15px;
+    }
+    .services-link {
+        background: #b9fd50;
+        padding: 15px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .services-link a{
+        color:#000;
+        font-weight: bold;
+    }
+    #block-teceze-bootstrap-views-block-articles-alternate-listing-block-1 h2 {
+        margin-top: 0px;
+    }
+    #block-teceze-bootstrap-views-block-articles-alternate-listing-block-1 {
+        background-color: #fff;
+        text-align: center;
+        color:#000;
+        padding: 60px;
+    }
+    #block-teceze-bootstrap-views-block-articles-alternate-listing-block-1 h2 {
+        text-align: center;
+    }
+    .articles-listing-small .views-row > div {
+        padding: 15px;
+    }
+    .articles-listing-small .views-field-title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .articles-listing-small .views-field-view-node a {
+        background: #000;
+        padding: 4px 25px;
+        border-radius: 26px;
+        color: #b9fd50 !important;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .articles-listing-small .views-row:nth-child(odd) .views-field-field-image img {
+        border-radius: 30px 30px 30px 0px;
+    }
+      
+    .articles-listing-small .views-row:nth-child(even) .views-field-field-image img {
+        border-radius: 30px 30px 0px 30px;
+    }
+    .site-footer {
+        padding: 42px;
+    }
+    .site-footer .site-footer__top nav {
+        padding-left: 0px;
+    }
+    .site-footer .block {
+        border: 0px;
+    }
+    #block-teceze-bootstrap-ourlocation {
+        padding-top: 40px;
+    }
+    #block-teceze-bootstrap-socialcontactblock {
+        padding-left: 0px;
+    }
+    #block-teceze-bootstrap-copyright {
+        text-align: left;
     }
   }
   
@@ -384,5 +538,13 @@ a {
   @media (min-width: 768px) {
     #block-teceze-bootstrap-views-block-services-block-2,  #block-teceze-bootstrap-views-block-articles-alternate-listing-block-1 .articles-listing-small {
       display: none !important;
+    }
+    .hero-bottom-icon-section .paragraph-field{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-bottom-icon-section .paragraph-item{
+        display: flex;
+        margin-left:30px;
     }
   }
